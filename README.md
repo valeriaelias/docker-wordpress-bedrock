@@ -1,4 +1,4 @@
-# WordPress Local Development Environment with Docker & Docker Compose
+# Bedrock WordPress Local Development Environment with Docker & Docker Compose
 
 Install docker https://docs.docker.com/get-docker/
 
