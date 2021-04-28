@@ -17,7 +17,8 @@ Instructions on how to set up a Bedrocl WordPress local dev enviroment using thi
    127.0.0.1 projectname.local 
    127.0.0.1 www.projectname.local 
    ```
-   In Linux systems you will find it under '/etc/hosts'. In a Windows 10 machine you will probably find it under 'C:\Windows\System32\drivers\etc' and you can open/edit it with the Notepad. If you cannot save the file, try opening the Notepad as Administrator. For other systems, you will need to ask google to give you the hint where the hosts file could be. :)
+   In Linux systems you will find it under '/etc/hosts'. In a Windows 10 machine you will probably find it under 'C:\Windows\System32\drivers\etc' and you can open/edit it with the Notepad. If you cannot save the file, try opening the Notepad as Administrator. For other systems, you will need to ask google to give you the hint where the hosts file is located. :)
+   
    Now you can use any browser to access your application using http://projectname.local/. As the hostname is set up in your system and hosted in your system (inside a docker container) it is not published on the internet. Only your machine/system will be able to access this url.
 10. Now you are good to go. To access the website go to: http://projectname.local
 11. To access the WordPress admin got to: http://projectname.local/wp/wp-admin
