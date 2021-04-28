@@ -11,11 +11,17 @@ Instructions on how to set up a Bedrocl WordPress local dev enviroment using thi
 5. Replace all the containers' names, and database credentials in the docker-compose.yml file
 6. Use your terminal to `cd` into your project folder and run the command `docker-compose --project-name your-project-name up -d --build`
 7. Open the Docker Desktop UI to check all 4 containers are mounted and running
-8. On docker desktop open the php container cli and run: 'composer create-project roots/bedrock' to create the Bedrock WordPress
-9. Once the WordPress installed is completed you are good to go
-10. To access the WordPress admin got to: http://projectname/wp/wp-admin
-11. To access the website go to: http://projectname
-12. To access the PHPMyAdmin go to: http://projectname:8080
+8. On docker desktop open the php container cli and run: 'composer create-project roots/bedrock' to create the Bedrock WordPress. Wait until the installation finishes.
+9. Edit your computer hosts file to add your new project server name so it will map to your application. The hosts file is a simple text file that contains any hostnames or domain names used in your local system. At the bottom of this file you should add the following line:
+   ```
+   127.0.0.1 projectname.local 
+   127.0.0.1 www.projectname.local 
+   ```
+   In Linux systems you will find it under '/etc/hosts'. In a Windows 10 machine you will probably find it under 'C:\Windows\System32\drivers\etc' and you can open/edit it with the Notepad. If you cannot save the file, try opening the Notepad as Administrator. For other systems, you will need to ask google to give you the hint where the hosts file could be. :)
+   Now you can use any browser to access your application using http://projectname.local/. As the hostname is set up in your system and hosted in your system (inside a docker container) it is not published on the internet. Only your machine/system will be able to access this url.
+10. Now you are good to go. To access the website go to: http://projectname.local
+11. To access the WordPress admin got to: http://projectname.local/wp/wp-admin
+12. To access the PHPMyAdmin go to: http://projectname.local:8080
 
 ## Containers/Services
 

@@ -40,7 +40,7 @@ services:
       - ./wp-app/logs/nginx:/app/logs/nginx
       - ./server-conf/nginx:/etc/nginx/conf.d
 
-  phpmyadmin
+  phpmyadmin:
     container_name: projectname_phpmyadmin
     image: phpmyadmin/phpmyadmin
     links:
