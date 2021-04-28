@@ -7,7 +7,7 @@ Instructions on how to set up a Bedrocl WordPress local dev enviroment using thi
 1. Create your project folder
 2. Download the files or clone the repo to your project folder
 3. Replace the 'env-files/.env.localdev' database credentials and the 'WP_HOME'
-4. Replace the 'nginx/nginx.conf' server_name with the same name you used on WP_HOME (without 'http://')
+4. Replace the 'server-conf/nginx/nginx.conf' server_name with the same name you used on WP_HOME (without 'http://')
 5. Replace all the containers' names, and database credentials in the docker-compose.yml file
 6. Use your terminal to `cd` into your project folder and run the command `docker-compose --project-name your-project-name up -d --build`
 7. Open the Docker Desktop UI to check all 4 containers are mounted and running
